@@ -1,0 +1,16 @@
+{
+  "name": "framework-mercurios",
+  "version": "1.0",
+  "authors": [
+    "Mário Brandão <mariobrandaobr@hotmail.com>",
+    "Tassiano Alencar <tassiano.alencar@icloud.com>"
+  ],
+  "description": "Framework front-end",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">=2.1",
+    "animate.css": "*",
+    "less": "*",
+    "slick.js": "~1.5.5"
+  }
+}

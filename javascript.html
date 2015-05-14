@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Mercurios UI - Grid</title>
+
+	<!-- Folhas de estilo divididas por função -->
+	<link rel="stylesheet" href="assets/css/grid.css">
+	<link rel="stylesheet" href="assets/css/geral.css">
+
+	<!-- Includes -->
+	<link rel="stylesheet" href="assets/modules/slick.js/slick/slick.css">
+	<link rel="stylesheet" href="assets/modules/slick.js/slick/slick-theme.css">
+</head>
+<body>
+	<div class="container">
+
+		<div class="top wid-full bg-white">
+			<div class="logo wid-4 sm-wid-full">
+				<a href="index.html"><img src="assets/img/mercurios.png" alt="Mercurios"></a>
+			</div>
+
+			<div class="outer-nav wid-11 offset-1 sm-wid-6">
+				<ol class="navbar offset-7">
+					<li><a href="grid.html">Fundação</a></li>
+					<li><a href="css.html">CSS</a></li>
+					<li><a href="componentes.html">Componentes</a></li>
+					<li><a href="javascript.html">JavaScript</a></li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="aside affix outer-nav wid-3 sm-wid-full bg-white">
+			<ol class="navbar">
+				<li><a href="#slider">Slider</a></li>
+				<li><a href="#offset">Offset</a></li>
+				<li><a href="#grid-mobile">Grid Mobile</a></li>
+			</ol>
+		</div>
+
+		<div class="wrapper">
+			<div class="wid-16">
+				<header>
+					<hgroup>
+						<h2 class="larger" id="slider">Slider</h2>
+					</hgroup>
+				</header>
+				<div class="wid-16">
+					<div class="slider">
+						<img src="assets/img/bg2.jpg" alt="Imagem 1">
+						<img src="assets/img/bg3.jpg" alt="Imagem 2">
+						<img src="assets/img/bg4.jpg" alt="Imagem 3">
+					</div>
+					<p class="align-l">Documentação <a href="http://kenwheeler.github.io/slick/">slick.js</a></p>
+				</div>
+				<header>
+					<hgroup>
+						<h2 class="larger" id="slider">Slider</h2>
+					</hgroup>
+				</header>
+				<div class="wid-16">
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="assets/modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="assets/modules/less/dist/less.min.js"></script>
+<script type="text/javascript" src="assets/modules/slick.js/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/modules/mercurios-js/mercurios.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.slider').slick({
+			infinite: true,
+			dots: true,
+			adaptiveHeight: true,
+			arrows: false
+		});
+	});
+</script>
+</html>

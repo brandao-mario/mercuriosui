@@ -1,0 +1,58 @@
+@blue: #518FB9;
+@black: #525252;
+@gray: #D0D0D0;
+
+.list{
+
+	color: @black;
+
+	li, a{
+		padding: 1em 1%;
+		border: 1px solid @gray;
+		border-bottom: none;
+
+		&:last-child{
+			border-bottom: 1px solid @gray;
+		}
+
+		.list-markup{
+			float: right;
+			padding: 0;
+			border: none;
+			color: @blue;
+			background: none;
+
+			&:hover{
+				background: none;
+				color: @blue;
+			}
+
+			*{
+				float: left;
+			}
+		}
+
+		&.active{
+			background: @blue;
+			color: white;
+		}
+	}
+
+	a{
+		display: list-item;
+		color: @blue;
+		text-decoration: none;
+
+		&:hover{
+			background: @blue;
+			color: white;
+		}
+
+	}
+
+	.list-header{
+		font-size: 1.5em;
+		padding: 0.6em 1%;
+	}
+
+}

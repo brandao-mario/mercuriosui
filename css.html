@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Mercurios UI - Grid</title>
+
+	<!-- Folhas de estilo divididas por função -->
+	<link rel="stylesheet" href="assets/css/grid.css">
+	<link rel="stylesheet" href="assets/css/geral.css">
+	<link rel="stylesheet" href="assets/css/forms.css">
+	<link rel="stylesheet" href="assets/css/tabelas.css">
+	<link rel="stylesheet" href="assets/Fonts&Icons/FlatIcon/flaticon.css">
+</head>
+<body>
+	<div class="container">
+
+		<!-- Topo -->
+		<div class="top wid-full bg-white">
+			<div class="logo wid-4 sm-wid-full">
+				<a href="index.html"><img src="assets/img/mercurios.png" alt="Mercurios"></a>
+			</div>
+
+			<div class="outer-nav wid-11 offset-1 sm-wid-6">
+				<ol class="navbar offset-7">
+					<li><a href="grid.html">Fundação</a></li>
+					<li><a href="css.html">CSS</a></li>
+					<li><a href="componentes.html">Componentes</a></li>
+					<li><a href="javascript.html">JavaScript</a></li>
+				</ol>
+			</div>
+		</div>
+		<!-- Aside -->
+		<div class="outer-nav aside wid-3 sm-wid-full bg-white">
+			<ol class="navbar">
+				<li class="border-b"><a href="#botoes">Botões</a></li>
+				<li class="border-b"><a href="#forms">Formulários</a></li>
+				<li class="border-b"><a href="#tabelas">Tabelas</a></li>
+				<li class="border-b"><a href="#tipos">Tipografia</a></li>
+				<li class="border-b"><a href="#icones">Ícones</a></li>
+				<li class="border-b"><a href="#imagens">Imagens</a></li>
+			</ol>
+		</div>
+		<!-- Conteúdo -->
+		<div class="wrapper">
+			<div class="wid-16">
+
+				<!-- Botões -->
+				<header class="wid-full">
+					<hgroup>
+						<h2 id="botoes" class="larger">Botões</h2>
+					</hgroup>
+				</header>
+				<div class="wid-16">
+					<h4 class="larger align-l">Default</h4>
+					<a href="#" class="btn"><span class="flaticon-three115"></span> .btn</a>
+					<a href="#" class="btn-red">.btn-red</a>
+					<a href="#" class="btn-blue">.btn-blue</a>
+					<a href="#" class="btn-green">.btn-green</a>
+					<a href="#" class="btn-black">.btn-black</a>
+					<a href="#" class="btn-white">.btn-white</a>
+					<a href="#" class="btn-link">.btn-link</a>
+				</div>
+				<div class="wid-16">
+					<h4 class="larger align-l">Border</h4>
+					<a href="#" class="btn border">.border</span></a>
+					<a href="#" class="btn-red border">.border</a>
+					<a href="#" class="btn-blue border">.border</a>
+					<a href="#" class="btn-green border">.border</a>
+					<a href="#" class="btn-black border">.border</a>
+					<a href="#" class="btn-white border">.border <span class="flaticon-map-pointer2"></a>
+					<a href="#" class="btn-link border">.border</a>
+				</div>
+				<div class="wid-16">
+					<h4 class="larger align-l">Rounded</h4>
+					<a href="#" class="btn rounded">.rounded</a>
+					<a href="#" class="btn-red rounded">.rounded</a>
+					<a href="#" class="btn-blue rounded">.rounded</a>
+					<a href="#" class="btn-green rounded">.rounded</a>
+					<a href="#" class="btn-black rounded">.rounded</span></a>
+					<a href="#" class="btn-white border rounded">.rounded</a>
+					<a href="#" class="btn-link border rounded">.rounded <span class="flaticon-marketing8"></a>
+				</div>
+
+				<!-- Forms -->
+				<header class="wid-full">
+					<hgroup>
+						<h2 id="forms" class="larger">Formulários</h2>
+					</hgroup>
+				</header>
+				<div class="wid-8 sm-wid-6">
+					<form>
+						<fieldset>
+							<label>Nome do título</label>
+							<input type="text" placeholder="Digite algo...">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Sua textarea..."></textarea>
+						</fieldset>
+						<a href="#" class="btn-blue float-r">.btn-blue</a>
+					</form>
+				</div>
+				<div class="wid-8 sm-wid-6">
+					<pre>&lt;form&gt;<br>	&lt;fieldset&gt;<br>		&lt;label&gt;Nome do título&lt;/label&gt;<br>		&lt;input type="text" placeholder="Digite algo..."&gt;<br>		&lt;textarea name="areaMensagem" cols="30" rows="10" placeholder="Sua textarea..."&gt;&lt;/textarea&gt;<br>	&lt;/fieldset&gt;<br>&lt;/form&gt;
+					</pre>
+				</div>
+
+				<!-- Tabelas -->
+				<header class="wid-full">
+					<hgroup>
+						<h2 id="tabelas" class="larger">Tabelas</h2>
+						<p>Para usar o layout default das tabelas não necessário usar classes,
+						apenas para as outras opções use: <br> ".table-divided", ".table-divided-v", ".table-divided-h".</p>
+					</hgroup>
+				</header>
+				<div class="wid-16">
+					<h4 class="larger align-l">Default</h4>
+					<table class="wid-full">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Lorem1</th>
+								<th>Lorem2</th>
+								<th>Lorem3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="wid-16">
+					<h4 class="larger align-l">Divided</h4>
+					<table class="wid-full table-divided">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Lorem1</th>
+								<th>Lorem2</th>
+								<th>Lorem3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="wid-16">
+					<h4 class="larger align-l">Divided-v</h4>
+					<table class="wid-full table-divided-v">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Lorem1</th>
+								<th>Lorem2</th>
+								<th>Lorem3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="wid-16">
+					<h4 class="larger align-l">Divided-h</h4>
+					<table class="wid-full table-divided-h">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Lorem1</th>
+								<th>Lorem2</th>
+								<th>Lorem3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+								<td>Lorem</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Tipografia -->
+				<header class="wid-full">
+					<hgroup>
+						<h2 id="tipos" class="larger">Tipografia</h2>
+					</hgroup>
+				</header>
+				<div class="wid-16">
+					<p class="align-l float-l">
+						Crie títulos com a classe "larger". Por padrão todo texto é criado com alinhamento central e largura 100%, se quiser delimitar uma widura diferente, envolva o texto com uma tag de classe "wid-x".	A fonte dos títulos é a <span class="larger"> Sans Pro,</span> a do corpo, Helvetica Neue.
+					</p>
+					<div class="wid-8 sm-wid-6">
+						<h4 class="larger align-l">Exemplo</h4>
+						<p class="align-l">Alinhado a esquerda com "algin-l".</p>
+					</div>
+					<div class="wid-8 sm-wid-6">
+						<h4 class="larger align-r">Exemplo</h4>
+						<p class="align-r">Alinhado a direita com "algin-r".</p>
+					</div>
+				</div>
+
+				<!-- Ícones -->
+				<header class="wid-full">
+					<hgroup>
+						<h2 id="icones" class="larger">Ícones</h2>
+					</hgroup>
+				</header>
+				<div class="wid-16 border">
+					<p class="larger">Flaticons</p>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-home168"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-home4"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-car95"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-arrow487"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-keyboard53"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-auricular6"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-call60"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-books8"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-calendar146"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-car95"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-checked21"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-clock96"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-contract11"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-earth213"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-earth53"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-email19"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-email5"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-facebook29"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-facebook3"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-facebook55"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-map-pointer2"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-facebook30"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-favorite21"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-marketing8"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-gear39"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-settings48"></span>
+					</div>
+					<div class="wid-1 sm-wid-1">
+						<span class="flaticon-three115"></span>
+					</div>
+				</div>
+
+				<!-- Imagens -->
+				<header class="wid-full">
+					<hgroup>
+						<h2 id="imagens" class="larger">Imagens</h2>
+					</hgroup>
+				</header>
+				<div class="wid-16">
+					<div class="wid-8 sm-wid-6">
+						<img src="assets/img/bg2.jpg" alt="" class="round wid-full">
+						<p>class="round"</p>
+					</div>
+					<div class="wid-8 sm-wid-6">
+						<img src="assets/img/bg3.jpg" alt="" class="rounded wid-full">
+						<p>class="rounded"</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="assets/modules/less/dist/less.min.js"></script>
+</html>
