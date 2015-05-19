@@ -13,6 +13,8 @@
 	<!-- Includes -->
 	<link rel="stylesheet" href="assets/modules/slick.js/slick/slick.css">
 	<link rel="stylesheet" href="assets/modules/slick.js/slick/slick-theme.css">
+
+	<!-- LESS -->
 	<link rel="stylesheet/less" type="text/css" href="assets/custom/componentes.less">
 </head>
 <body>
@@ -20,49 +22,186 @@
 
 		<div class="top wid-full bg-white">
 			<div class="logo wid-4 sm-wid-full">
-				<a href="index.html"><img src="assets/img/mercurios.png" alt="Mercurios"></a>
+				<a href="index.html">
+					<img src="assets/img/mercurios.png" alt="Mercurios">
+				</a>
 			</div>
 
-			<div class="outer-nav wid-11 offset-1 sm-wid-6">
+			<nav class="outer-nav wid-11 offset-1 sm-wid-6">
 				<ol class="navbar offset-7">
 					<li><a href="grid.html">Fundação</a></li>
 					<li><a href="css.html">CSS</a></li>
 					<li><a href="componentes.html">Componentes</a></li>
 					<li><a href="javascript.html">JavaScript</a></li>
 				</ol>
-			</div>
+			</nav>
 		</div>
-
-		<div class="aside affix outer-nav wid-3 sm-wid-full bg-white">
-			<ol class="navbar">
-				<li><a href="#listas">Listas</a></li>
-				<li><a href="#grid-mobile">Grid Mobile</a></li>
-				<li><a href="#slider">Slider</a></li>
-			</ol>
-		</div>
-
+		
 		<div class="wrapper">
-			<div class="wid-16">
-				<header>
-					<hgroup>
-						<h2 class="larger" id="listas">Listas</h2>
-					</hgroup>
-				</header>
-				<div class="wid-16">
+			<nav class="aside affix outer-nav wid-3 sm-wid-full bg-white">
+				<ol class="navbar">
+					<li class="border-b"><a href="#listas">Listas</a></li>
+					<li class="border-b"><a href="#boxes">Boxes</a></li>
+					<li class="border-b"><a href="#slider">Slider</a></li>
+				</ol>
+			</nav>
+
+			<div class="wid-13 bg-white">
+
+				<div class="wid-full">
+					<header>
+						<hgroup>
+							<h2 class="larger" id="listas">Listas</h2>
+						</hgroup>
+					</header>
 					<ul class="list wid-8 sm-wid-6">
 						<li class="list-header">Sou um título</li>
-						<li>Item <a href="#" class="list-markup wid-1 sm-wid-1"><span class="flaticon-calendar146"></span></a></li>
+						<li>Item <a href="#" class="list-markup wid-2 sm-wid-1"><span class="flaticon-calendar146"></span></a></li>
 						<li class="active">Item</li>
 						<li>Item</li>
-						<a href="#" class="active">Link</a>
+						<a href="#" class="active">Link <span class="list-markup flaticon-checked21 wid-2 sm-wid-1"></span></a>
 						<a href="#">Link</a>
-						<a href="#">Link</a>
+						<a href="#">Link <span class="list-markup flaticon-checked21 wid-2 sm-wid-1"></span></a>
 					</ul>
+					<ul class="list wid-8 sm-wid-6">
+						<li class="list-header avatar">
+							<div class="bg-red round avatar-img">
+								<span class="list-markup flaticon-books8"></span>
+							</div>
+							<span class="li-title">Avatar List</span>
+						</li>
+						<li class="avatar">
+							<div class="bg-blue round avatar-img">
+								<span class="list-markup flaticon-calendar146"></span>
+							</div>
+							<span class="li-title">Avatar List</span>
+							<p>First Line<br>
+							Second Line</p>
+						</li>
+						<li class="avatar">
+							<div class="bg-green round avatar-img">
+								<span class="list-markup flaticon-checked21"></span>
+							</div>
+							<span class="li-title">Avatar List</span>
+							<p>First Line<br>
+							Second Line: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nemo amet suscipit labore veritatis ullam in, aperiam rerum, accusantium neque expedita corporis!</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="wid-full">
+					<header>
+						<hgroup>
+							<h2 class="larger" id="boxes">Boxes</h2>
+						</hgroup>
+					</header>
+					<div class="wid-5 sm-wid-6">
+						<article class="box">
+							<div class="box-img">
+								<img src="assets/img/modelo.jpg" alt="box-img">
+							</div>
+							<div class="box-content">
+								<span class="box-title">
+									Titulo do box
+								</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, est eos minus porro voluptatum sapiente earum ipsum qui facilis eum sunt in nesciunt debitis. Saepe molestias impedit nihil deleniti eaque.</p>
+							</div>
+							<div class="box-action">
+								<a href="#">Call to action...</a>
+							</div>
+						</article>
+					</div>
+					<div class="wid-6 sm-wid-6">
+						<article class="box">
+							<div class="box-img">
+								<img src="assets/img/textura.png" alt="box-img">
+							</div>
+							<div class="box-content">
+								<span class="box-title">
+									Titulo do box
+								</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, est eos minus porro voluptatum sapiente earum ipsum qui facilis eum sunt in nesciunt debitis. Saepe molestias impedit nihil deleniti eaque.</p>
+							</div>
+						</article>
+					</div>
+					<div class="wid-5 sm-wid-6">
+						<div class="wid-full">
+							<article class="box bg-red">
+								<div class="box-content">
+									<span class="box-title">
+										Titulo do box
+									</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, deleniti laboriosam adipisci, cum, sed magnam at dignissimos nulla soluta aspernatur reprehenderit architecto ipsum velit. Ullam in illum repreende.</p>
+								</div>
+								<div class="box-action">
+									<a href="#">Veja mais...</a>
+									<a href="#">Ou clique aqui...</a>
+								</div>
+							</article>
+						</div>
+						<div class="wid-full">
+							<article class="box bg-black">
+								<div class="box-content">
+									<span class="box-title">
+										Titulo do box
+									</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, est eos minus porro voluptatum sapiente earum ipsum qui facilis eum sunt in nesciunt debitis. Saepe molestias impedit nihil deleniti eaque. Ullam in illum reprehenderit dolores.</p>
+								</div>
+							</article>
+						</div>
+						<div class="wid-full">
+							<article class="box bg-green">
+								<div class="box-content">
+									<span class="box-title">
+										Titulo do box
+									</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, est eos minus porro voluptatum sapiente earum ipsum qui facilis eum sunt in nesciunt debitis. Saepe molestias impedit nihil deleniti eaque.</p>
+								</div>
+							</article>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<footer>
-			
+		<footer class="bg-red">
+			<div class="footer">
+				<div class="wrapper">
+					<div class="wid-6 sm-wid-6">
+						<h3 class="align-l">Use Mercurios UI</h3>
+						<p class="align-l">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus officiis corrupti dolores assumenda magni culpa quia quisquam inventore dolorem, deleniti atque consequuntur, modi commodi aliquid cumque animi esse quam eaque.</p>
+					</div>
+					<div class="wid-6 sm-wid-6">
+						<h3 class="align-l">Contribua</h3>
+						<p class="align-l">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus officiis corrupti dolores assumenda magni culpa quia quisquam inventore dolorem, deleniti atque consequuntur, modi commodi aliquid cumque animi esse quam eaque.</p>
+					</div>
+					<div class="wid-4 sm-wid-6">
+						<h3 class="align-l">Links</h3>
+						<nav class="footer-mav">
+							<ol class="align-l">
+								<li>Links 1</li>
+								<li>Links 2</li>
+								<li>Links 3</li>
+								<li>Links 4</li>
+								<li>Links 5</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="footer-second bg-black">
+				<div class="wrapper">
+					<div class="wid-16 sm-wid-6">
+						<address class="wid-11 sm-wid-6">&copy; 2015 Copyright Mercurios</address>
+						<div class="float-r wid-3 hidden-phone">
+							<div class="logo">
+								<a href="index.html">
+									<img src="assets/img/mercurios.png" alt="Mercurios">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>

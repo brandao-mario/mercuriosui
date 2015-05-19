@@ -12,7 +12,7 @@
 }
 
 .wrapper{
-	width: 75%;
+	width: 96%;
 	display: inline-block;
 	padding: 0 2%;
 	margin: 0 auto;
@@ -23,8 +23,6 @@
 	padding: 0.5em 1%;
 	float: left;
 	min-height: 20px;
-	/* Para Teste */
-	background: #FEFEFE;
 }
 
 .wid-1{
@@ -169,12 +167,12 @@
  * ----------------------------------------
  */
 
-.visible-phone, .visible-tablet, .hidden-desktop{
+.visible-phone, .hidden-desktop{
 	visibility: hidden;
 	display: none;
 }
 
-.visible-desktop, .hidden-phone, .hidden-tablet{
+.visible-desktop, .hidden-phone{
 	visibility: visible;
 	display: block;
 }

@@ -74,8 +74,11 @@ table {
  */
 
 body{
-	background: #EF8E7D;
+	/*background: #F7F7F7;*/
+	background: url(../img/swirl_pattern.png);
 	font-family: "Helvetica Neue", Arial, sans-serif;
+	float: left;
+	width: 100%;
 }
 
 h1,h2,h3,h4{
@@ -171,7 +174,7 @@ header .larger{
 }
 
 .bg-white .navbar li a:hover{
-	color: #EF8E7D;
+	color: #FAA51A;
 }
 
 .navbar a{
@@ -182,6 +185,12 @@ header .larger{
 .navbar a:visited, .navbar a:focus, .navbar a:active{
 	text-decoration: none;
 	color: inherit;
+}
+
+.aside{
+	-webkit-box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.15);
+	box-shadow:	5px 0px 5px 0px rgba(50, 50, 50, 0.15);
 }
 
 .aside .navbar li{
@@ -218,15 +227,19 @@ header .larger{
 }
 
 .red{
-	background: #EF8E7D;
+	color: #EF8E7D;
+}
+
+.orange{
+	color: #FAA51A;
 }
 
 .blue{
-	background: #518FB9;
+	color: #518FB9;
 }
 
 .green{
-	background: #86BB6A;
+	color: #86BB6A;
 }
 
 [class*="bg-"]{
@@ -246,6 +259,10 @@ header .larger{
 	background: #EF8E7D;
 }
 
+.bg-orange{
+	background: #FAA51A;
+}
+
 .bg-blue{
 	background: #518FB9;
 }
@@ -261,23 +278,23 @@ header .larger{
  */
 
 .border{
-	border: 1px solid #D0D0D0;
+	border: 1px solid #EBEBEB;
 }
 
 .border-t{
-	border-top: 1px solid #D0D0D0;
+	border-top: 1px solid #EBEBEB;
 }
 
 .border-r{
-	border-right: 1px solid #D0D0D0;
+	border-right: 1px solid #EBEBEB;
 }
 
 .border-b{
-	border-bottom: 1px solid #D0D0D0;
+	border-bottom: 1px solid #EBEBEB;
 }
 
 .border-l{
-	border-left: 1px solid #D0D0D0;
+	border-left: 1px solid #EBEBEB;
 }
 
 /**
@@ -324,9 +341,9 @@ header .larger{
 [class*="btn"]:hover{
     opacity: .8;
 
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.25);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.25);
-	box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.25);
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.35);
+	box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.35);
 }
 
 .btn-success{
@@ -411,6 +428,10 @@ pre{
 
 .align-r{
 	text-align: right;
+}
+
+.align-c{
+	text-align: center;
 }
 
 
