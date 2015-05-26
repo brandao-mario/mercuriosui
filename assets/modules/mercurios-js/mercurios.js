@@ -1,29 +1,40 @@
-$(document).ready(function(){
 
+jQuery.fn.bgRandom = function(settings){
 	// Background randomico
-	background = {
-		_bg: [],
-		urls: ["url('assets/img/bg1.jpg') no-repeat",
-		"url('assets/img/bg2.jpg') no-repeat",
-		"url('assets/img/bg3.jpg') no-repeat",
-		"url('assets/img/bg4.jpg') no-repeat"],
 
-		// Sorteia o BG
-		sorteia: function() {
-			this._bg.push({
-				url: this.urls[Math.floor(4 * Math.random())]
-			});
-		},
-		// Insere no body
-		insere: function() {
-			for (var i = 0, tam = this._bg.length; i < tam; i++) {
-				var bg = this._bg[i];
-				$('.bg-random').css("background",bg.url);
-			}
-		}
+	var parametros = {
+		urls: [],
+		repetir: 'no-repeat'
+	};
+
+	parametros.urls = ["http://www.portaldoholanda.com.br/userfiles/corpo.JPG"];
+	bgs = [];
+
+	if (settings) {
+		$.extend(parametros, settings);
 	}
 
-	background.sorteia();
-	background.insere();
+	return this.each(function(){
+			
+		// Sorteia o BG
+		var sorteia = function() {
+			var numeroImg = parametros.urls.length;
 
-});
+			this.bgs.push({
+				url: parametros.urls[Math.floor(numeroImg * Math.random())]
+			});
+		}();
+
+		// Insere no body
+		var insere = function() {
+			for (var i = 0, tam = this.bgs.length; i < tam; i++) {
+				bg = this.bgs[i];
+			}
+		}();
+
+		$(this).css({
+			'background': "url("+ bg.url +")",
+			'background-repeat': parametros.repetir
+		});
+	});
+};

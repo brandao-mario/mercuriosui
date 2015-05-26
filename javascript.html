@@ -41,14 +41,14 @@
 				</ol>
 			</div>
 
-			<div class="wid-13 bg-white">
+			<div class="wid-13 sm-wid-full bg-white">
 				<div class="wid-full">
-					<header>
-						<hgroup>
-							<h2 class="larger" id="slider">Slider</h2>
-						</hgroup>
-					</header>
-					<div class="wid-16">
+					<div class="wid-16 sm-wid-full">
+						<header>
+							<hgroup>
+								<h2 class="larger" id="slider">Slider</h2>
+							</hgroup>
+						</header>
 						<div class="slider">
 							<img src="assets/img/bg2.jpg" alt="Imagem 1">
 							<img src="assets/img/bg3.jpg" alt="Imagem 2">
@@ -56,13 +56,15 @@
 						</div>
 						<p class="align-l">Documentação <a href="http://kenwheeler.github.io/slick/">slick.js</a></p>
 					</div>
-					<header>
-						<hgroup>
-							<h2 class="larger" id="slider">Slider</h2>
-						</hgroup>
-					</header>
-					<div class="wid-16">
-						
+					<div class="wid-8 sm-wid-full">
+						<header>
+							<hgroup>
+								<h2 id="slider">Background Sorting</h2>
+							</hgroup>
+						</header>
+						<p>Sorteie um plano de fundo a cada inicialização. <br>
+						É possível controlar através de parametros as urls e a repetição.</p>
+						<div class="bg-random wid-full rounded" style="height: 250px;"></div>
 					</div>
 				</div>
 			</div>
@@ -95,11 +97,11 @@
 			<div class="footer-second bg-black">
 				<div class="wrapper">
 					<div class="wid-16 sm-wid-6">
-						<address class="wid-11 sm-wid-6">&copy; 2015 Copyright Mercurios</address>
-						<div class="float-r wid-3 hidden-phone">
+						<address class="wid-4 sm-wid-6">&copy; 2015 Copyright Mercurios</address>
+						<div class="float-r wid-1 hidden-phone">
 							<div class="logo">
 								<a href="index.html">
-									<img src="assets/img/mercurios.png" alt="Mercurios">
+									<img src="assets/img/cabeca-formiga-stroke.png" alt="Mercurios">
 								</a>
 							</div>
 						</div>
@@ -109,10 +111,11 @@
 		</footer>
 	</div>
 </body>
+
+<!-- Modules -->
 <script type="text/javascript" src="assets/modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="assets/modules/less/dist/less.min.js"></script>
-<script type="text/javascript" src="assets/modules/slick.js/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/modules/mercurios-js/mercurios.js"></script>
+<script type="text/javascript" src="assets/modules/slick.js/slick/slick.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.slider').slick({
@@ -120,6 +123,9 @@
 			dots: true,
 			adaptiveHeight: true,
 			arrows: false
+		});
+		$('.bg-random').bgRandom({
+			urls: ["assets/img/bg1.jpg","assets/img/bg2.jpg","assets/img/bg3.jpg","assets/img/bg4.jpg"]
 		});
 	});
 </script>

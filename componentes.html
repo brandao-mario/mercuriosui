@@ -5,14 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title> Mercurios UI - Grid</title>
 
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/cabeca-formiga-stroke.png">
+
 	<!-- Folhas de estilo divididas por função -->
 	<link rel="stylesheet" href="assets/css/grid.css">
 	<link rel="stylesheet" href="assets/css/geral.css">
+	<link rel="stylesheet" href="assets/css/forms.css">
 	<link rel="stylesheet" href="assets/Fonts&Icons/FlatIcon/flaticon.css">
-
-	<!-- Includes -->
-	<link rel="stylesheet" href="assets/modules/slick.js/slick/slick.css">
-	<link rel="stylesheet" href="assets/modules/slick.js/slick/slick-theme.css">
 
 	<!-- LESS -->
 	<link rel="stylesheet/less" type="text/css" href="assets/custom/componentes.less">
@@ -42,11 +42,12 @@
 				<ol class="navbar">
 					<li class="border-b"><a href="#listas">Listas</a></li>
 					<li class="border-b"><a href="#boxes">Boxes</a></li>
-					<li class="border-b"><a href="#slider">Slider</a></li>
+					<li class="border-b"><a href="#preload">Preloader</a></li>
+					<li class="border-b"><a href="#forms">Formulários</a></li>
 				</ol>
 			</nav>
 
-			<div class="wid-13 bg-white">
+			<div class="wid-13 sm-wid-full bg-white">
 
 				<div class="wid-full">
 					<header>
@@ -161,8 +162,46 @@
 						</div>
 					</div>
 				</div>
+				<div class="wid-full">
+					<header>
+						<hgroup>
+							<h2 class="larger" id="preload">Preloader</h2>
+						</hgroup>
+					</header>
+					<div class="wid-8 sm-wid-6">
+						<div class="preloader"><span class="bg-blue"></span></div>
+					</div>
+					<div class="wid-8 sm-wid-6">
+						<div class="preloader"><span class="bg-red"></span></div>
+					</div>
+				</div>
+
+				<!-- Forms -->
+				<header class="wid-full">
+					<hgroup>
+						<h2 id="forms" class="larger">Formulários</h2>
+					</hgroup>
+				</header>
+				<div class="wid-8 sm-wid-6">
+					<form>
+						<fieldset>
+							<label>Nome do Form</label>
+							<input type="text" placeholder="Digite algo...">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Sua textarea..."></textarea>
+						</fieldset>
+						<a href="#" class="btn float-r">.btn-blue</a>
+					</form>
+				</div>
+				<div class="wid-8 sm-wid-6">
+					<label class="red">Danger</label>
+					<input type="text" class="danger" placeholder="Preencha...">
+					<label class="orange">Warning</label>
+					<input type="text" class="warning" placeholder="Preencha...">
+				</div>
 			</div>
 		</div>
+
+		<!-- Footer -->
 		<footer class="bg-red">
 			<div class="footer">
 				<div class="wrapper">
@@ -176,13 +215,13 @@
 					</div>
 					<div class="wid-4 sm-wid-6">
 						<h3 class="align-l">Links</h3>
-						<nav class="footer-mav">
+						<nav class="footer-nav">
 							<ol class="align-l">
-								<li>Links 1</li>
-								<li>Links 2</li>
-								<li>Links 3</li>
-								<li>Links 4</li>
-								<li>Links 5</li>
+								<li><a href="#" class="border-b">Link 1</a></li>
+								<li><a href="#" class="border-b">Link 2</a></li>
+								<li><a href="#" class="border-b">Link 3</a></li>
+								<li><a href="#" class="border-b">Link 4</a></li>
+								<li><a href="#" class="border-b">Link 5</a></li>
 							</ol>
 						</nav>
 					</div>
@@ -191,11 +230,11 @@
 			<div class="footer-second bg-black">
 				<div class="wrapper">
 					<div class="wid-16 sm-wid-6">
-						<address class="wid-11 sm-wid-6">&copy; 2015 Copyright Mercurios</address>
-						<div class="float-r wid-3 hidden-phone">
+						<address class="wid-4 sm-wid-6">&copy; 2015 Copyright Mercurios</address>
+						<div class="float-r wid-1 hidden-phone">
 							<div class="logo">
 								<a href="index.html">
-									<img src="assets/img/mercurios.png" alt="Mercurios">
+									<img src="assets/img/cabeca-formiga-stroke.png" alt="Mercurios">
 								</a>
 							</div>
 						</div>
@@ -205,9 +244,17 @@
 		</footer>
 	</div>
 </body>
-<script type="text/javascript" src="assets/modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Less -->
 <script type="text/javascript" src="assets/modules/less/dist/less.min.js"></script>
+
+<!-- Modules -->
+<script type="text/javascript" src="assets/modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="assets/modules/slick.js/slick/slick.min.js"></script>
+
+<!-- Mercurios JS -->
 <script type="text/javascript" src="assets/modules/mercurios-js/mercurios.js"></script>
-<script>less.watch();</script>
+<script>
+	less.watch();
+</script>
 </html>

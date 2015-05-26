@@ -9,7 +9,7 @@ label{
 	padding: 2%;
 }
 
-input, textarea{
+input, textarea, select{
 	float: left;
 	width: 97.5%;
 	padding: 1%;
@@ -22,7 +22,18 @@ input, textarea{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-input:focus, input:active, textarea:focus, textarea:active{
+input:focus, input:active, textarea:focus, textarea:active, select:focus, select:active{
 	outline: 0 none;
-	box-shadow: 0 0 2px blue;
+	box-shadow: 0 0 1px #525252;
+	border-color: #525252;
+}
+
+input.danger,textarea.danger,select.danger{
+	border-color: #EF8E7D;
+	box-shadow: 0 0 1px #EF8E7D;
+}
+
+input.warning,textarea.warning,select.warning{
+	border-color: #FAA51A;
+	box-shadow: 0 0 1px #FAA51A;
 }
