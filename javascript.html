@@ -59,12 +59,20 @@
 					<div class="wid-8 sm-wid-full">
 						<header>
 							<hgroup>
-								<h2 id="slider">Background Sorting</h2>
+								<h2>Background Sorting</h2>
 							</hgroup>
 						</header>
 						<p>Sorteie um plano de fundo a cada inicialização. <br>
-						É possível controlar através de parametros as urls e a repetição.</p>
+						É possível controlar através de parametros as urls das imagens e a repetição em x-y.</p>
 						<div class="bg-random wid-full rounded" style="height: 250px;"></div>
+					</div>
+					<div class="wid-8 sm-wid-full">
+						<header>
+							<hgroup>
+								<h2>Affix</h2>
+							</hgroup>
+						</header>
+						<p>Fixe um objeto na tela.</p>
 					</div>
 				</div>
 			</div>
@@ -84,11 +92,11 @@
 						<h3 class="align-l">Links</h3>
 						<nav class="footer-mav">
 							<ol class="align-l">
-								<li>Links 1</li>
-								<li>Links 2</li>
-								<li>Links 3</li>
-								<li>Links 4</li>
-								<li>Links 5</li>
+								<li><a href="#" class="border-b">Link 1</a></li>
+								<li><a href="#" class="border-b">Link 2</a></li>
+								<li><a href="#" class="border-b">Link 3</a></li>
+								<li><a href="#" class="border-b">Link 4</a></li>
+								<li><a href="#" class="border-b">Link 5</a></li>
 							</ol>
 						</nav>
 					</div>
@@ -127,6 +135,7 @@
 		$('.bg-random').bgRandom({
 			urls: ["assets/img/bg1.jpg","assets/img/bg2.jpg","assets/img/bg3.jpg","assets/img/bg4.jpg"]
 		});
+		$('.top').Affix();
 	});
 </script>
 </html>

@@ -5,13 +5,17 @@
  *----------------------
 **/
 
-
 @blue:  #518FB9;
 @black: #525252;
 @gray:  #D0D0D0;
 @red:	#EF8E7D;
 
 
+.grid-full{
+	float: left;
+	width: 100%;
+}
+	
 .border{
 	border: 1px solid #EBEBEB;
 }
@@ -239,10 +243,9 @@
 
 footer{
 	position: relative;
-	float: left;
-	width: 100%;
 	bottom: 0;
 	padding-bottom: 1px;
+	.grid-full
 
 	.footer-second{
 		margin-bottom: -1px;
@@ -297,5 +300,79 @@ footer{
 		-webkit-animation: preload 4s linear infinite;
 		-o-animation: preload 4s linear infinite;
 		animation: preload 4s linear infinite;
+	}
+}
+
+/*
+ *------------------------------
+ *	Box Dinâmico
+ *------------------------------
+ */
+
+.dinamic-item{
+	position: relative;
+	.grid-full;
+
+	.dinamic-call{
+		.grid-full;
+		text-align: center;
+
+		span,i{
+			padding: 10% 0;
+			display: inline-block;
+		}
+	}
+	.dinamic-description{
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		background: @black;
+
+		&.esquerda{
+			left: 110%;
+
+			&:before{
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 10px;
+				width: 0; 
+				height: 0;
+
+				border-top: 15px solid transparent;
+				border-bottom: 15px solid transparent; 
+				border-right: 15px solid @black;
+
+				position: absolute;
+				left: -15px;
+			}
+		}
+
+		&.direita{
+			left: -110%;
+
+			&:before{
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 10px;
+				width: 0; 
+				height: 0;
+
+				border-top: 15px solid transparent;
+				border-bottom: 15px solid transparent; 
+				border-left: 15px solid @black;
+
+				position: absolute;
+				right: -45px;
+			}
+		}
+	}
+
+	&:hover{
+		.dinamic-description{
+			z-index: 99;
+			opacity: 1;
+		}
 	}
 }
